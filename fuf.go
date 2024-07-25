@@ -10,7 +10,7 @@ func LoadJSONFIle(filename string, output interface{}) error {
 	if err != nil {
 		return err
 	}
-	if err := json.Unmarshal(data, &output); err != nil {
+	if err := json.Unmarshal(data, output); err != nil {
 		return err
 	}
 	return nil
